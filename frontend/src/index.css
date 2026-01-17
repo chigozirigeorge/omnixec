@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* OmniXec Design System - Futuristic Cross-Chain Platform */
+
+@layer base {
+  :root {
+    --background: 222 47% 7%;
+    --foreground: 210 20% 93%;
+
+    --card: 222 40% 10%;
+    --card-foreground: 210 20% 93%;
+
+    --popover: 222 40% 10%;
+    --popover-foreground: 210 20% 93%;
+
+    --primary: 245 76% 65%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 222 30% 15%;
+    --secondary-foreground: 210 20% 93%;
+
+    --muted: 222 20% 18%;
+    --muted-foreground: 220 10% 55%;
+
+    --accent: 168 100% 48%;
+    --accent-foreground: 222 47% 7%;
+
+    --success: 151 76% 54%;
+    --success-foreground: 222 47% 7%;
+
+    --warning: 36 91% 55%;
+    --warning-foreground: 222 47% 7%;
+
+    --destructive: 0 72% 71%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 222 20% 20%;
+    --input: 222 20% 20%;
+    --ring: 245 76% 65%;
+
+    --radius: 1rem;
+
+    /* Glassmorphism tokens */
+    --glass-bg: 222 40% 12% / 0.6;
+    --glass-border: 0 0% 100% / 0.1;
+    --glass-highlight: 0 0% 100% / 0.05;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(245 76% 65%) 0%, hsl(280 70% 60%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(168 100% 48%) 0%, hsl(190 100% 50%) 100%);
+    --gradient-glow: radial-gradient(ellipse at center, hsl(245 76% 65% / 0.3) 0%, transparent 70%);
+    --gradient-mesh: radial-gradient(at 40% 20%, hsl(245 76% 65% / 0.15) 0px, transparent 50%),
+                     radial-gradient(at 80% 0%, hsl(168 100% 48% / 0.1) 0px, transparent 50%),
+                     radial-gradient(at 0% 50%, hsl(280 70% 60% / 0.1) 0px, transparent 50%);
+
+    /* Shadows */
+    --shadow-sm: 0 2px 8px hsl(0 0% 0% / 0.3);
+    --shadow-md: 0 8px 24px hsl(0 0% 0% / 0.4);
+    --shadow-lg: 0 16px 48px hsl(0 0% 0% / 0.5);
+    --shadow-glow: 0 0 40px hsl(245 76% 65% / 0.3);
+    --shadow-accent-glow: 0 0 40px hsl(168 100% 48% / 0.3);
+
+    --sidebar-background: 222 40% 8%;
+    --sidebar-foreground: 210 20% 93%;
+    --sidebar-primary: 245 76% 65%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 222 30% 15%;
+    --sidebar-accent-foreground: 210 20% 93%;
+    --sidebar-border: 222 20% 20%;
+    --sidebar-ring: 245 76% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    font-family: 'Inter', sans-serif;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    background-image: var(--gradient-mesh);
+    background-attachment: fixed;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-card/60 backdrop-blur-xl border border-white/10 shadow-lg;
+  }
+
+  .glass-hover {
+    @apply transition-all duration-300 hover:bg-card/80 hover:border-white/20 hover:shadow-xl;
+  }
+
+  .glass-card {
+    @apply glass rounded-2xl p-6;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-primary);
+  }
+
+  .gradient-text-accent {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-accent);
+  }
+
+  .btn-gradient {
+    background-image: var(--gradient-primary);
+    @apply text-primary-foreground font-semibold shadow-lg transition-all duration-300;
+  }
+
+  .btn-gradient:hover {
+    @apply shadow-xl scale-[1.02];
+    box-shadow: var(--shadow-glow);
+  }
+
+  .glow-primary {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .glow-accent {
+    box-shadow: var(--shadow-accent-glow);
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient-shift 8s ease infinite;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

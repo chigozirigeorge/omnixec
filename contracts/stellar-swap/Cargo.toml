@@ -1,0 +1,20 @@
+[package]
+name = "near-swap"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+# MUST use near-sdk 5.0 or higher to avoid parity-secp256k1 issue
+near-sdk = "5.0"
+borsh = "1.0" 
+
+
+[profile.release]
+opt-level = "z"     # Optimize for size
+lto = true
+codegen-units = 1
+strip = true

@@ -1,0 +1,124 @@
+SOLANA_TREASURY_KEY="[197,167,98,14,36,255,218,192,22,181,5,202,149,14,34,236,105,169,141,170,116,108,218,151,90,0,49,78,90,24,179,220,176,167,159,155,33,142,158,96,154,88,63,45,150,111,7,7,90,241,159,17,52,47,218,181,253,210,40,133,146,42,223,116]"
+SOLANA_RPC_URL="https://api.devnet.solana.com"
+
+
+stellar pkey: pelican unlock merit denial sunny involve absurd erase behind retire page program 
+
+
+near = {"account_id":"omnixec.near","public_key":"ed25519:9bRUSaVcVUESUTE1HodmFN7zf2Bk8yVvVR4SNMfgaJw3","secret_phrase": powder hole patient upper license powder father pull dumb renew science attitude
+"private_key": "ed25519:35Cb2J2TySNV9gAYkcm3eakRiX6cfVxBgwnV9MxNMovz1MvkUg8mueidNt2emWa6UucwcHfwu7pfoJQEhNhvomRT"
+}
+dave@dave-Latitude-5580:~/Code/crosschain_payments/backend$ solana-keygen new --no-bip39-passphrase
+Generating a new keypair
+Wrote new keypair to /home/dave/.config/solana/id.json
+===========================================================================
+pubkey: Ctb17CtRtUfjEPiDzk9wyNbS8LpTFSvv8LTPhNjggDWj
+===========================================================================
+Save this seed phrase to recover your new keypair:
+flat session avoid final absent minimum chaos hobby saddle gas enough place
+===========================================================================
+dave@dave-Latitude-5580:~/Code/crosschain_payments/backend$ solana-keygen pubkey
+Ctb17CtRtUfjEPiDzk9wyNbS8LpTFSvv8LTPhNjggDWj
+dave@dave-Latitude-5580:~/Code/crosschain_payments/backend$ solana airdrop 1 Ctb17CtRtUfjEPiDzk9wyNbS8LpTFSvv8LTPhNjggDWj --url devnet
+Requesting airdrop of 1 SOL
+Error: airdrop request failed. This can happen when the rate limit is reached.
+dave@dave-Latitude-5580:~/Code/crosschain_payments/backend$ solana airdrop 1 Ctb17CtRtUfjEPiDzk9wyNbS8LpTFSvv8LTPhNjggDWj --url devnet
+Requesting airdrop of 1 SOL
+
+Signature: 3ZviwMbCXxKfQtxPhuPdUJBsPnLKP9p6kXd6zNPywxFJmtHePpcxf7hUPegT5kqYEpSfPviYLraY3wW25aT6QxSs
+
+1 SOL
+dave@dave-Latitude-5580:~/Code/crosschain_payments/backend$ near create-account your-treasury.testnet --fundWith 5
+Command 'near' not found, did you mean:
+  command 'netr' from snap netr (0.2.0)
+  command 'netr' from deb netr (0.1.6-1build1)
+  command 'rear' from deb rear (2.7+dfsg-1.2)
+  command 'pear' from deb php-pear (1:1.10.16+submodules+notgz-3)
+  command 'ner' from deb frog (0.34-1build1)
+  command 'neat' from deb neat (2.3.2-2build3)
+  command 'bear' from deb bear (3.1.6-1)
+See 'snap info <snapname>' for additional versions.
+dave@dave-Latitude-5580:~/Code/crosschain_payments/backend$ npm install -g near-cli
+npm warn deprecated base-x@2.0.6: use 3.0.0 instead, safe-buffer has been merged and release for compatability
+npm warn deprecated @ledgerhq/hw-transport-u2f@5.36.0-deprecated: @ledgerhq/hw-transport-u2f is deprecated. Please use @ledgerhq/hw-transport-webusb or @ledgerhq/hw-transport-webhid. https://github.com/LedgerHQ/ledgerjs/blob/master/docs/migrate_webusb.md
+
+added 277 packages in 44s
+
+45 packages are looking for funding
+  run `npm fund` for details
+dave@dave-Latitude-5580:~/Code/crosschain_payments/backend$ near create-account your-treasury.testnet --fundWith 5
+near create-account <new-account-id>
+
+Create a new account
+
+Options:
+      --help                                      Show help  [boolean]
+      --version                                   Show version number  [boolean]
+  -v, --verbose                                   Prints out verbose output  [boolean] [default: false]
+      --new-account-id                            Account to be created (e.g. bob.testnet, bob.near, sub.bob.testnet, sub.bob.near)
+      --useFaucet                                 Pre-fund the account through a faucet service (testnet only)  [boolean] [default: false]
+      --useAccount, --accountId, --masterAccount  Account that will request and fund creating the new account  [string]
+      --initialBalance                            Number of tokens to transfer to the new account  [string] [default: "1"]
+      --publicKey                                 Public key to initialize the account with  [string]
+      --seedPhrase                                seedPhrase from which to derive the account's publicKey  [string]
+      --signWithLedger, --useLedgerKey            Use Ledger for signing  [boolean] [default: false]
+      --ledgerPath                                Path to the Ledger key  [string] [default: "44'/397'/0'/0'/1'"]
+      --useLedgerPK, --newLedgerKey               Initialize the account using the public key from the Ledger  [boolean] [default: false]
+      --PkLedgerPath                              Path to the Ledger key that will be added to the account  [string] [default: "44'/397'/0'/0'/1'"]
+      --networkId                                 Which network to use. Supports: mainnet, testnet, custom  [string] [default: "testnet"]
+
+Unknown argument: fundWith
+dave@dave-Latitude-5580:~/Code/crosschain_payments/backend$ export PATH="$PATH:$(npm config get prefix)/bin"
+dave@dave-Latitude-5580:~/Code/crosschain_payments/backend$ near create-account your-treasury.testnet --useFaucet --initialBalance "5"
+Storing credentials for account: your-treasury.testnet (network: testnet)
+Saving key to '~/.near-credentials/testnet/your-treasury.testnet.json'
+dave@dave-Latitude-5580:~/Code/crosschain_payments/backend$ 
+
+
+stellar
+
+
+Public Key
+GCURFSA6LR36PHMA64YK6OWZYBSSRPI5P5VKXR6XBPNNX3H467ADN72W
+
+Secret Key
+SDTSOOHN4TKJBYYC4D7RK3VXSVZXVFVMKTJDCM4FL3S53CDMY4FUUVPH
+
+
+Recovery Phrase
+warrior foam move corn umbrella rigid pluck lazy sauce frog bounce burden ivory drink next brass fine happy rebel then link provide winner horn
+
+
+
+
+
+
+
+//////.env
+
+# DATABASE
+DATABASE_URL=postgresql://user:pass@db-primary:5432/cross_chain_inventory_prod
+BIND_ADDRESS=0.0.0.0:8080
+RUST_LOG=info,sqlx=warn
+
+# SOLANA
+# Convert your base64 bytes to a Base58 secret key for the SDK
+SOLANA_TREASURY_KEY=KzygCwJ5wyDx4KceNfVcDtaL6SGFGYJjyvhL1Dwn4uL51qAGHnoFQZQMnNTLy9sQvusCENph8suxFWLvLSBjWt7
+SOLANA_RPC_URL=https://api.devnet.solana.com
+
+# STELLAR
+STELLAR_TREASURY_KEY=SDTSOOHN4TKJBYYC4D7RK3VXSVZXVFVMKTJDCM4FL3S53CDMY4FUUVPH
+STELLAR_HORIZON_URL=https://horizon-testnet.stellar.org
+STELLAR_NETWORK_PASSPHRASE="Test SDF Network ; September 2015"
+
+# NEAR
+NEAR_ACCOUNT_ID=your-treasury.testnet
+NEAR_PRIVATE_KEY=ed25519:4rVDbrbea4oUEXYgmvALvxuf7SWtbu3gzxApDUMjXQtimiJqASm72q6ouPWZ3ukYMwXUZj7zUiMJRtRWTKo6Y9em
+NEAR_RPC_URL=https://rpc.testnet.near.org || https://rpc.mainnet.near.org
+
+# RISK CONTROLS (Testnet values - VERY conservative)
+STELLAR_DAILY_LIMIT=10000
+NEAR_DAILY_LIMIT=100
+SOLANA_DAILY_LIMIT=1
+CIRCUIT_BREAKER_ENABLED=true
+HOURLY_OUTFLOW_THRESHOLD=0.1

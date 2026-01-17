@@ -1,0 +1,11 @@
+# Rust
+target/
+Cargo.lock
+
+# Logs
+*.log
+
+# Environment
+.env
+target/
+Cargo.lock

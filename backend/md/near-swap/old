@@ -1,0 +1,58 @@
+dave@dave-Latitude-5580:~/Code/crosschain_payments/backend/contracts/near-swap$ near
+◇  What are you up to? (select one of the options with the up-down arrows on your 
+keyboard and press Enter) 
+│  contract    - Manage smart-contracts: deploy code, call functions
+│  
+◇  Choose a contract action: 
+│  deploy           - Deploy own WASM code or re-use an existing global code from 
+the chain
+│  
+◇  What is the contract account ID? 
+│  omnixec.testnet
+│  
+◇  Choose a contract action: 
+│  use-file              - Deploy a contract using a wasm file
+│  
+◇  What is the file location of the contract? 
+│  target/wasm32-unknown-unknown/release/near_swap.wasm
+│  
+◇  Select the need for initialization: 
+│  without-init-call  - Don't add an initialize
+│  
+◇  What is the name of the network? 
+│  testnet
+│  
+├  Unsigned transaction:
+│    signer_id:    omnixec.testnet
+│    receiver_id:  omnixec.testnet
+│    actions:
+│       -- deploy code <5oemb7AaMJVMz8H9rNctBBXyGve43JJYUV6RMS5ih3T1> to a account <omnixec.testnet>
+│     
+◇  Select a tool for signing the transaction: 
+│  sign-with-keychain               - Sign the transaction with a key saved in the
+ secure keychain
+│  
+├  Your transaction was signed successfully.
+│    Public key: ed25519:9hjxXVCCbakMNkedhESkRkqESFgDjDudAHgLEKDNFcRz
+│    Signature:  ed25519:43h1YiEtSgqH9e8t1o3HwVGYxi2ckm51mCsC64djKQvyPv3nNQ3pp1jMWvd849qDv8PscZo8jE3ENGCNpJxfQc17
+│     
+◇  How would you like to proceed? 
+│  send             - Send the transaction to the network
+│  
+├  Transaction Execution Info:
+│    Gas burned: 1.7 Tgas
+│    Transaction fee: 0.0001620869519072 NEAR
+│    Transaction ID: 4awSg9SrdpQ4kuny55neFuzYwg4Eag5hdSn4pkfwzcQN
+│    To see the transaction in the transaction explorer, please open this url in your browser:
+│    https://explorer.testnet.near.org/transactions/4awSg9SrdpQ4kuny55neFuzYwg4Eag5hdSn4pkfwzcQN
+│     
+
+Contract code has been successfully deployed.
+
+
+
+
+Here is your console command if you need to script it or re-run:
+    /home/dave/.nvm/versions/node/v20.19.6/lib/node_modules/near-cli-rs/node_modules/.bin_real/near contract deploy omnixec.testnet use-file target/wasm32-unknown-unknown/release/near_swap.wasm without-init-call network-config testnet sign-with-keychain send
+
+dave@dave-Latitude-5580:~/Code/crosschain_payments/backend/contracts/near-swap$ 

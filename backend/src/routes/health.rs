@@ -1,0 +1,1 @@
+pub use crate::api::handler::health_check;

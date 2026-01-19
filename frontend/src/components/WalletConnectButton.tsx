@@ -4,9 +4,9 @@ import { useWallet } from '@/contexts/WalletProvider';
 import { Wallet, LogOut } from 'lucide-react';
 import { useState, useCallback, useEffect } from 'react';
 import { ChainType } from '@/lib/wallet-adapters/types';
-import near from "../assets/near-logo.png";
-import stellar from "../assets/stellar-logo.png";
-import solana from "../assets/solana-logo.png";
+import near from "@/assets/near-logo.png";
+import stellar from "@/assets/stellar-logo.png";
+import solana from "@/assets/solana-logo.png";
 
 const CHAIN_DISPLAY_NAMES: Record<ChainType, string> = {
   solana: 'Solana',

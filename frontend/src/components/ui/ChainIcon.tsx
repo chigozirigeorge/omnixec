@@ -1,8 +1,8 @@
 import { cn } from '@/lib/utils';
 import { Chain } from '@/stores/useStore';
-import near from "../../assets/near-logo.png";
-import solana from "../../assets/solana-logo.png";
-import stellar from "../../assets/stellar-logo.png"
+import near from "@/assets/near-logo.png";
+import solana from "@/assets/solana-logo.png";
+import stellar from "@/assets/stellar-logo.png"
 
 interface ChainIconProps {
   chain: Chain;

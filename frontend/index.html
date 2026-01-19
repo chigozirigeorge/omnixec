@@ -18,6 +18,20 @@
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
     
     <link rel="canonical" href="https://omnixec.io" />
+
+    <script>
+    // Polyfill for global object
+    var global = global || window;
+    var Buffer = Buffer || require('buffer').Buffer;
+    var process = process || { env: {} };
+    
+    // Polyfill for process.nextTick
+    if (typeof process.nextTick !== 'function') {
+      process.nextTick = function(callback) {
+        setTimeout(callback, 0);
+      };
+    }
+  </script>
   </head>
 
   <body class="dark">

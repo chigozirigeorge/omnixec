@@ -2,6 +2,22 @@
 
 A comprehensive, multi-chain execution layer that enables seamless cryptocurrency payments and trades across Solana, Stellar, and NEAR blockchains with unified wallet management, intelligent quote routing, and advanced risk controls.
 
+#RustAfricaHackathon
+
+## Hackathon Scope & Project Status
+
+OmniXec is being developed as a Rust-based prototype during the Rust Africa Hackathon.  
+The focus of this submission is on backend architecture, cross-chain execution modeling, and safe financial infrastructure design.
+
+Due to the limited hackathon timeframe:
+
+- Some modules contain partial implementations
+- Several functions are marked as TODO where interfaces and system flow are defined but full logic is still in progress
+- Core architectural components such as intent routing, risk controls, settlement modeling, and execution adapters are implemented at a structural level
+
+This project demonstrates how Rust can be used to build high-performance, secure, and modular infrastructure for cross-chain Web3 execution.
+
+
 ## 📋 Table of Contents
 
 - [Project Overview](#project-overview)
